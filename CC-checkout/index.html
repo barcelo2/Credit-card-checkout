@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ <html class="no-js" lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Credit Card Checkout</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+    </head>
+    <body>
+
+        <!--Header-->
+      <section class="container">
+     <header>
+         <div id="menu">
+            <i class="fas fa-bars"></i>
+         </div>
+         <div class="logo">
+             <img src="Logo.png" alt="Logo">
+         </div>
+
+         <div class="cart">
+             <p>1 item <i class="fa fa-shopping-cart" aria-hidden="true"></i></p>
+         </div>
+     </header>
+
+     <!--Content-->
+     <section class="content">
+
+        <!--CHECKOUT NAVIGATION-->
+         <article id="checkoutNav" class="shadow">
+         <ul>
+        <!--link1-->
+             <li>
+            <p>01</p>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <p>Shipping</p>
+             </li>
+         <!--link2-->
+
+             <li>
+            <p>02</p>
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <p>Payment</p>
+             </li>
+
+         <!--link2-->
+  
+             <li>
+            <p>03</p>
+            <i class="far fa-envelope"></i>
+            <p>Success</p>
+             </li>
+         </ul>
+         </article>
+        <!--PRODUCT PHOTO-->
+         <article id="product" >
+          <img src="product.jpg" alt="Roche Posay" class="shadow">
+         </article>
+
+         <h1 >Toleriane Ultra Nuit</h1>
+        <!--CHECKOUT CARD-->
+         <article id="checkoutCard" class="shadow">
+         <div id="details">
+             <dl>
+                 <dt>Product</dt>
+                 <dd id="thumbnail" ><img src="psmall.jpg" alt="Roche Posay"></dd>
+                
+                 <dt>Quantity</dt>
+                 <dd><input type="number" value="1"></dd>
+            
+                <dt>Price</dt>
+                <dd>$18</dd>  
+                </dl>
+         </div>
+         <form action="">
+             <div class="cards">
+              <ul>
+                <li>
+        <!--card type-->
+           <label for="" name="Card">Card type</label>
+            </li>
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-mastercard"></i></li>
+            <li><i class="fab fa-cc-paypal"></i></li>
+            <li><i class="fab fa-cc-amex"></i></li>
+        </ul>
+        </div>
+        <!--card number-->
+           <div id="cardNumber">
+               <label for="">Card number</label>
+            <input type="number" placeholder="XXXX">
+            <input type="number" placeholder="XXXX">
+            <input type="number" placeholder="XXXX">
+            <input type="number" placeholder="XXXX">
+
+           </div>
+
+           <div class="securityInfo">
+               <label for="">Start date</label>
+               <label for="">Expiry date</label>
+               <label for="">CVC</label>
+               <input type="text" placeholder="MM/YY">
+               <input type="text" placeholder="MM/YY">
+               <input type="number"placehole="XXX" >
+           </div>
+           <input type="submit" value="Check out" id="btnSubmit">
+         </form>
+
+         </article>
+     </section>
+
+      </section>
+
+
+       
+    </body>
+</html>
